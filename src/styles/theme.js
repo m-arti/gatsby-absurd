@@ -1,7 +1,7 @@
 const theme = {
   font: {
-    primary: `'Prata', serif`,
-    secondary: `'Average', serif`,
+    primary: `'Cormorant', serif`,
+    secondary: `'Lato', sans`,
   },
   font_size: {
     small: 'font-size: 20px; line-height: 30px',
@@ -12,15 +12,16 @@ const theme = {
   },
   color: {
     white: {
-      regular: '#FFFFFF',
-      dark: '#F6F6F6',
+      regular: '#FFA500',
+      dark: '#FF0000',
     },
     black: {
       lighter: '#ABA8AF',
-      light: '#564F62',
-      regular: '#211E26',
+      light: '# 003333',
+      regular: '#FFFFFF',
     },
-    primary: '#8bd8ed',
+    primary: '#003333',
+    secondary: '#F1F7F7'
   },
   screen: {
     xs: '575px',

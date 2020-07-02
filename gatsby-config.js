@@ -33,11 +33,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Absurd`,
-        short_name: `absurd`,
+        name: `Martins Samuel`,
+        short_name: `M`,
         start_url: `/`,
-        background_color: `#8bd8ed`,
-        theme_color: `#8bd8ed`,
+        background_color: `#C0C0C0`,
+        theme_color: `#C0C0C0`,
         display: `minimal-ui`,
         icon: `static/favicon.svg`,
       },
@@ -45,7 +45,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`average`, `prata\:400,700`],
+        fonts: [`average`, `Cormorant\:400,700`],
       },
     },
     {

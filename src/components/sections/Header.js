@@ -31,18 +31,10 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                Fast in
+                — Travelling
                 <br />
-                every way
-                <br />
-                that matters
+                thruogh the unfamiliar
               </h1>
-              <br />
-              <p>
-                <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
-                  Check out source &nbsp;&#x2794;
-                </StyledExternalLink>
-              </p>
             </Text>
           </Grid>
         </Container>
@@ -52,7 +44,7 @@ const Header = () => (
 );
 
 const HeaderWrapper = styled.header`
-  background-color: ${props => props.theme.color.primary};
+  background-color: ${props => props.theme.color.secondary};
   padding-top: 96px;
 
   @media (max-width: ${props => props.theme.screen.md}) {

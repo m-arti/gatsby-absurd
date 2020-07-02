@@ -48,12 +48,11 @@ const About = () => (
         <Container>
           <Grid>
             <div>
-              <h2>Speed past the competition</h2>
+              <h2>Hello!</h2>
               <p>
-                Gatsby.js builds the fastest possible website. Instead of
-                waiting to generate pages when requested, pre-build pages and
-                lift them into a global cloud of servers — ready to be delivered
-                instantly to your users wherever they are.
+              Welcome to my digital palette, where I share my explorations and little discoveries. I'm Martins. I'm a PhD student in Computer Science at Queen's University Belfast researching fake news detection using unsupervised machine learning.
+
+              I previously was a data scientist at Adoreboard. And before that, I graduated with an MEng in Aerospace Engineering from Queen's.
               </p>
             </div>
             <Art>

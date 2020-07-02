@@ -7,21 +7,16 @@ import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
 import GithubIcon from '@static/icons/github.svg';
-import InstagramIcon from '@static/icons/instagram.svg';
 import TwitterIcon from '@static/icons/twitter.svg';
 
 const SOCIAL = [
   {
     icon: GithubIcon,
-    link: 'https://github.com/ajayns/gatsby-absurd',
-  },
-  {
-    icon: InstagramIcon,
-    link: 'https://instagram.com/ajay_ns',
+    link: 'https://github.com/m-arti',
   },
   {
     icon: TwitterIcon,
-    link: 'https://twitter.com/ajayns08',
+    link: 'https://twitter.com/m_arti',
   },
 ];
 
@@ -52,14 +47,7 @@ const Footer = () => (
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
-              <h2>Absurd</h2>
-              <span>
-                Illustrations by
-                {` `}
-                <ExternalLink href="https://twitter.com/diana_valeanu">
-                  @diana_valeanu
-                </ExternalLink>
-              </span>
+              <p>MS, 2020</p>
             </Copyright>
             <SocialIcons>
               {SOCIAL.map(({ icon, link }) => (
@@ -90,18 +78,18 @@ const SocialIcons = styled.div`
 `;
 
 const FooterWrapper = styled.footer`
-  background-color: ${props => props.theme.color.primary};
-  padding: 32px 0;
+  background-color: ${props => props.theme.color.secondary};
+  padding: 30px 0;
 `;
 
 const Copyright = styled.div`
-  font-family: ${props => props.theme.font.secondary};
+  font-family: ${props => props.theme.font.primary};
   ${props => props.theme.font_size.small};
-  color: ${props => props.theme.color.black.regular};
+  color: ${props => props.theme.color.white.regular};
 
   a {
     text-decoration: none;
-    color: inherit;
+    color: ${props => props.theme.color.black.regular};
   }
 `;
 

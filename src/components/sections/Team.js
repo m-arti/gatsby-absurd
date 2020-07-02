@@ -155,7 +155,7 @@ const Title = styled.p`
 
 const Subtitle = styled.p`
   ${props => props.theme.font_size.small};
-  color: ${props => props.theme.color.black.light};
+  color: ${props => props.theme.color.black.regular};
 `;
 
 export default Team;

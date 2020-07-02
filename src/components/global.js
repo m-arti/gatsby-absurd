@@ -42,6 +42,6 @@ export const Section = styled.section`
     `background-color: ${
       props.accent === 'secondary'
         ? props.theme.color.white.dark
-        : props.theme.color.primary
+        : props.theme.color.white.dark
     }`};
 `;
