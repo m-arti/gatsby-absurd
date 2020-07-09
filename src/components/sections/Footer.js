@@ -38,16 +38,12 @@ const Footer = () => (
     `}
     render={data => (
       <React.Fragment>
-        <Art>
-          <Img
-            fluid={data.art_pot.childImageSharp.fluid}
-            style={{ width: 480, maxWidth: '100%', marginBottom: -16 }}
-          />
-        </Art>
         <FooterWrapper>
           <StyledContainer>
+
             <Copyright>
               <p>MS, 2020</p>
+
             </Copyright>
             <SocialIcons>
               {SOCIAL.map(({ icon, link }) => (

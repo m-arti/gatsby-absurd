@@ -33,7 +33,7 @@ const Header = () => (
               <h1>
                 — Travelling
                 <br />
-                thruogh the unfamiliar
+                through the unfamiliar
               </h1>
             </Text>
           </Grid>
@@ -44,7 +44,7 @@ const Header = () => (
 );
 
 const HeaderWrapper = styled.header`
-  background-color: ${props => props.theme.color.secondary};
+  background-color: ${props => props.theme.color.bg.lighter};
   padding-top: 96px;
 
   @media (max-width: ${props => props.theme.screen.md}) {
@@ -91,11 +91,11 @@ const Text = styled.div`
 `;
 
 const StyledExternalLink = styled(ExternalLink)`
-  color: inherit;
+  color: ${props => props.theme.color.bg.dark};
   text-decoration: none;
 
   &:hover {
-    color: ${props => props.theme.color.black.regular};
+    color: ${props => props.theme.color.bg.dark};
   }
 `;
 

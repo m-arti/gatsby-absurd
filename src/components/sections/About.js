@@ -46,25 +46,25 @@ const About = () => (
     render={data => (
       <Section id="about">
         <Container>
+
           <Grid>
             <div>
-              <h2>Hello!</h2>
+              <h2>Hi!</h2>
               <p>
-              Welcome to my digital palette, where I share my explorations and little discoveries. I'm Martins. I'm a PhD student in Computer Science at Queen's University Belfast researching fake news detection using unsupervised machine learning.
-
-              I previously was a data scientist at Adoreboard. And before that, I graduated with an MEng in Aerospace Engineering from Queen's.
+              Welcome to my digital palette, where I share my explorations and discoveries.  I am a Computer Science PhD student at Queen's University Belfast. My research is on the detection of fake news using artificial intelligence. I previously was a data scientist at Adoreboard. And before that, I graduated with an MEng in Aerospace Engineering from Queen's.
               </p>
             </div>
             <Art>
               <Img fluid={data.art_fast.childImageSharp.fluid} />
             </Art>
           </Grid>
+
           <Grid inverse>
             <Art>
               <Img fluid={data.art_learn.childImageSharp.fluid} />
             </Art>
             <div>
-              <h2>Nothing new to learn here</h2>
+              <h2>Research</h2>
               <p>
                 Enjoy the power of the latest web technologies – React.js ,
                 Webpack , modern JavaScript and CSS and more — all set up and
@@ -72,9 +72,10 @@ const About = () => (
               </p>
             </div>
           </Grid>
+
           <Grid>
             <div>
-              <h2>Grow and build your ideas</h2>
+              <h2>[II]</h2>
               <p>
                 Waste no more time on tooling and performance. Focus on the the
                 site you want to build and nothing more.

@@ -45,7 +45,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`average`, `Cormorant\:400,700`],
+        fonts: [`average`, `Cormorant Garamond\:400,700`],
       },
     },
     {
