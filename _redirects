@@ -1,1 +1,2 @@
-/blog/* https://msblog.netlify.app/blog/:splat 200!
+/home     /
+/blog/*   https://msblog.netlify.app/blog/:splat 200
