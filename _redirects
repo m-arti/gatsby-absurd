@@ -1,8 +1,0 @@
-/home /
-
-/blog/* https://msblog.netlify.app/blog/:splat 200!
-/static/* https://msblog.netlify.app/static/:splat 200!
-
-https://martinssamuel.com/blog/* https://msblog.netlify.app/blog/:splat 200!
-https://martinssamuel.com/static/* https://msblog.netlify.app/static/:splat 200!
-
