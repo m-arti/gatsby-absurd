@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+// import Img from 'gatsby-image';
 
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
@@ -38,17 +38,11 @@ const Footer = () => (
     `}
     render={data => (
       <React.Fragment>
-        <Art>
-          <Img
-            fluid={data.art_pot.childImageSharp.fluid}
-            style={{ width: 200, maxWidth: '100%', marginBottom: -16 }}
-          />
-        </Art>
         <hr/>
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
-              <h2>MS</h2>
+              <p>MS</p>
               <p style={{display: 'grid', textAlign:'left', fontWeight:400, lineHeight:1.5, fontSize:12, maxWidth:'500px'}}>
               <span>
               "Everything new is on the rim of our view, in the darkness, below the horizon, so that nothing new is visible but in the light of what we know." — Zia Haider Rahman
@@ -85,7 +79,7 @@ const SocialIcons = styled.div`
 
 const FooterWrapper = styled.footer`
   background-color: ${props => props.theme.color.primary};
-  padding: 32px 0;
+  padding: 35px 0;
 `;
 
 const Copyright = styled.div`
@@ -99,12 +93,20 @@ const Copyright = styled.div`
   }
 `;
 
-const Art = styled.figure`
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  margin-top: 48px;
-`;
+// const Art = styled.figure`
+//   display: flex;
+//   justify-content: center;
+//   margin: 0;
+//   margin-top: 48px;
+// `;
+
+// excluded (to use, insert under <FooterWrapper> * uncomment import Img...)
+// <Art>
+//   <Img
+//     fluid={data.art_pot.childImageSharp.fluid}
+//     style={{ width: 200, maxWidth: '100%', marginBottom: 0 }}
+//   />
+// </Art>
 
 const StyledContainer = styled(Container)`
   display: flex;

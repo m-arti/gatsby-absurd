@@ -23,7 +23,7 @@ const theme = {
       regular: '#000',
       active: '#88a58f'
     },
-    primary: '#f6f6f6',
+    primary: '#fff',
     navbar: 'rgb(255, 255, 255, 0.95)'
   },
   screen: {
