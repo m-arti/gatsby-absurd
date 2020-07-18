@@ -67,9 +67,9 @@ const SocialIcons = styled.div`
   display: flex;
 
   img {
-    margin: 0 8px;
-    width: 24px;
-    height: 24px;
+    margin: 0 20px;
+    width: 25px;
+    height: 25px;
   }
 
   @media (max-width: ${props => props.theme.screen.sm}) {

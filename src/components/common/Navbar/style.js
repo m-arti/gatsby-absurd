@@ -69,7 +69,7 @@ export const NavItem = styled.li `
     a {
       opacity: 1;
       color: ${props => props.theme.color.black.active};
-      font-weight: 200;
+      font-weight: 400;
     }
   }
 `;

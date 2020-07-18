@@ -18,7 +18,6 @@ const LOGOS = [
     logo: AppleMusicLogo,
     link: 'https://www.apple.com/in/music/',
   },
-
 ];
 
 const Contact = () => (
@@ -42,11 +41,11 @@ const Contact = () => (
         <StyledContainer>
 
           <div>
-            <h2>Contact Me</h2>
+            <h2>Contact</h2>
             <div>
-              <br/>
               <p>
-                Looking to get in touch?
+                Want to collaborate, or share an idea or a thought?
+                <br/><br/>Let's talk.
               </p>
             </div>
             <LogoGrid>
@@ -88,6 +87,14 @@ const StyledContainer = styled(Container)`
   display: flex;
   justify-content: flex-end;
   position: relative;
+
+  p {
+    font-size: 20px;
+  }
+
+  h2 {
+    margin-bottom: 16px;
+  }
 
   @media (max-width: ${props => props.theme.screen.md}) {
     justify-content: center;

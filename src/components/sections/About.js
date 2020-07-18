@@ -107,6 +107,11 @@ const Grid = styled.div`
     grid-template-columns: 2fr 3fr;
   `}
 
+  p {
+    font-size: 20px;
+    font-weight: normal;
+  }
+
   h2 {
     margin-bottom: 16px;
   }

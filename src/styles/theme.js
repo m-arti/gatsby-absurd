@@ -15,13 +15,13 @@ const theme = {
     white: {
       regular: '#fff',
       dark: '#555',
-      active: '#88a58f'
+      active: '#ff5500'
     },
     black: {
       lighter: '#aaa',
       light: '#555',
       regular: '#000',
-      active: '#88a58f'
+      active: '#ff5500'
     },
     primary: '#fff',
     navbar: 'rgb(255, 255, 255, 0.95)'
