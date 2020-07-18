@@ -6,20 +6,6 @@ import Img from 'gatsby-image';
 import { Section, Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
-import { ReactComponent as AirbnbLogo } from '@images/logos/airbnb.svg';
-import { ReactComponent as AppleMusicLogo } from '@images/logos/apple-music.svg';
-
-const LOGOS = [
-  {
-    logo: AirbnbLogo,
-    link: 'https://airbnb.io',
-  },
-  {
-    logo: AppleMusicLogo,
-    link: 'https://www.apple.com/in/music/',
-  },
-];
-
 const Contact = () => (
   <StaticQuery
     query={graphql`
@@ -45,16 +31,13 @@ const Contact = () => (
             <div>
               <p>
                 Want to collaborate, or share an idea or a thought?
-                <br/><br/>Let's talk.
+                <br/><br/>
+                <StyledExternalLink href="https://twitter.com/m_arti">Twitter</StyledExternalLink>
+                <br/>
+                <br/>
+                <StyledExternalLink href="mailto:marti.samuel1@gmail.com">Email</StyledExternalLink>
               </p>
             </div>
-            <LogoGrid>
-              {LOGOS.map(({ logo, link }) => (
-                <ExternalLink key={link} href={link}>
-                  {logo()}
-                </ExternalLink>
-              ))}
-            </LogoGrid>
           </div>
           <Art>
             <Img fluid={data.art_story.childImageSharp.fluid} />
@@ -64,24 +47,6 @@ const Contact = () => (
     )}
   />
 );
-
-const LogoGrid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 64px;
-  justify-items: center;
-  margin-top: 96px;
-
-  a {
-    svg {
-      width: 100%;
-    }
-  }
-
-  @media (max-width: ${props => props.theme.screen.sm}) {
-    grid-template-columns: 1fr;
-  }
-`;
 
 const StyledContainer = styled(Container)`
   display: flex;
