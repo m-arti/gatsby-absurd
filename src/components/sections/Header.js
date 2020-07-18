@@ -31,16 +31,14 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                Fast in
+                Researcher
                 <br />
-                every way
-                <br />
-                that matters
+                & Designer
               </h1>
               <br />
               <p>
-                <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
-                  Check out source &nbsp;&#x2794;
+                <StyledExternalLink href="https://martinssamuel.com/blog">
+                  Read my writings &#187;
                 </StyledExternalLink>
               </p>
             </Text>
@@ -101,9 +99,10 @@ const Text = styled.div`
 const StyledExternalLink = styled(ExternalLink)`
   color: inherit;
   text-decoration: none;
+  font-weight: 200;
 
   &:hover {
-    color: ${props => props.theme.color.black.regular};
+    color: ${props => props.theme.color.white.active};
   }
 `;
 

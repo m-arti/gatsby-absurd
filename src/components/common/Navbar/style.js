@@ -47,7 +47,7 @@ $ {
 `;
 
 export const NavItem = styled.li `
-  margin: 0 0.75em;
+  margin: 0 1em;
   font-family: ${props => props.theme.font.secondary};
   ${props => props.theme.font_size.small};
 
@@ -55,11 +55,21 @@ export const NavItem = styled.li `
     text-decoration: none;
     opacity: 0.5;
     color: ${props => props.theme.color.black.regular};
+    font-weight: 200;
+  }
+
+  &:hover {
+    a {
+      opacity: 0.5;
+      color: ${props => props.theme.color.black.active};
+    }
   }
 
   &.active {
     a {
       opacity: 1;
+      color: ${props => props.theme.color.black.active};
+      font-weight: 200;
     }
   }
 `;

@@ -65,7 +65,7 @@ const FAQS = [
 ];
 
 const Faq = () => (
-  <Section id="faq">
+  <Section id="@">
     <Container>
       <h1 style={{ marginBottom: 40 }}>Frequently Asked Questions</h1>
       <div>

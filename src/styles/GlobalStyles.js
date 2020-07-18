@@ -63,6 +63,14 @@ const GlobalStyles = createGlobalStyle`
     cursor: pointer;
   }
 
+  hr {
+    color: ${props => props.theme.color.white.dark};
+    background-color: ${props => props.theme.color.white.dark};
+    opacity: 1;
+    height:0.5px;
+    border-width:0;
+  }
+
   a {
     cursor: pointer;
   }

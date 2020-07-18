@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import { Section, Container } from '@components/global';
+import ExternalLink from '@common/ExternalLink';
 
 const About = () => (
   <StaticQuery
@@ -48,12 +49,11 @@ const About = () => (
         <Container>
           <Grid>
             <div>
-              <h2>Speed past the competition</h2>
+              <h2>Hello!</h2>
               <p>
-                Gatsby.js builds the fastest possible website. Instead of
-                waiting to generate pages when requested, pre-build pages and
-                lift them into a global cloud of servers — ready to be delivered
-                instantly to your users wherever they are.
+                Welcome to my digital palette, where I share my explorations and little discoveries.
+                <br/><br/>
+                I'm a PhD student in Computer Science at Queen's University Belfast researching fake news detection using machine learning.
               </p>
             </div>
             <Art>
@@ -65,23 +65,21 @@ const About = () => (
               <Img fluid={data.art_learn.childImageSharp.fluid} />
             </Art>
             <div>
-              <h2>Nothing new to learn here</h2>
+              <h2>Always learning.</h2>
               <p>
-                Enjoy the power of the latest web technologies – React.js ,
-                Webpack , modern JavaScript and CSS and more — all set up and
-                waiting for you to start building.
+                I previously was a data scientist at <StyledExternalLink href="https://adoreboard.com/">Adoreboard</StyledExternalLink>. And before that, I graduated with an MEng in Aerospace Engineering from Queen's.
+
               </p>
             </div>
           </Grid>
           <Grid>
             <div>
-              <h2>Grow and build your ideas</h2>
+              <h2>Curiosities</h2>
               <p>
-                Waste no more time on tooling and performance. Focus on the the
-                site you want to build and nothing more.
-                <br />
-                <br />
-                Gatsby is fast in every way that matters.
+                I'm interested in art, literature and jazz music. Every now and then, I paint, take <StyledExternalLink href="https://www.flickr.com/photos/127929628@N07">photographs</StyledExternalLink>, and create <StyledExternalLink href="https://vimeo.com/martinssamuel">animations</StyledExternalLink>.
+                <br/>
+                <br/>
+                You can read about my explorations and other writings on my <StyledExternalLink href="https://martinssamuel.com/blog">blog</StyledExternalLink>.
               </p>
             </div>
             <Art>
@@ -137,6 +135,16 @@ const Art = styled.figure`
   margin: 0;
   max-width: 380px;
   width: 100%;
+`;
+
+const StyledExternalLink = styled(ExternalLink)`
+  color: inherit;
+  text-decoration: underline;
+  font-weight: 400;
+
+  &:hover {
+    color: ${props => props.theme.color.white.active};
+  }
 `;
 
 export default About;

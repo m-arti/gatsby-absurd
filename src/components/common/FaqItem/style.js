@@ -52,5 +52,6 @@ export const Wrapper = styled.div`
     line-height: 26px;
     ${props => props.theme.font_size.small};
     color: ${props => props.theme.color.black.light};
+    font-weight: 200;
   }
 `;

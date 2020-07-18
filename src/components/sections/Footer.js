@@ -7,21 +7,16 @@ import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
 import GithubIcon from '@static/icons/github.svg';
-import InstagramIcon from '@static/icons/instagram.svg';
 import TwitterIcon from '@static/icons/twitter.svg';
 
 const SOCIAL = [
   {
     icon: GithubIcon,
-    link: 'https://github.com/ajayns/gatsby-absurd',
-  },
-  {
-    icon: InstagramIcon,
-    link: 'https://instagram.com/ajay_ns',
+    link: 'https://github.com/m-arti',
   },
   {
     icon: TwitterIcon,
-    link: 'https://twitter.com/ajayns08',
+    link: 'https://twitter.com/m_arti',
   },
 ];
 
@@ -46,25 +41,24 @@ const Footer = () => (
         <Art>
           <Img
             fluid={data.art_pot.childImageSharp.fluid}
-            style={{ width: 480, maxWidth: '100%', marginBottom: -16 }}
+            style={{ width: 200, maxWidth: '100%', marginBottom: -16 }}
           />
         </Art>
+        <hr/>
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
-              <h2>Absurd</h2>
+              <h2>MS</h2>
+              <p style={{display: 'grid', textAlign:'left', fontWeight:400, lineHeight:1.5, fontSize:12, maxWidth:'500px'}}>
               <span>
-                Illustrations by
-                {` `}
-                <ExternalLink href="https://twitter.com/diana_valeanu">
-                  @diana_valeanu
-                </ExternalLink>
+              "Everything new is on the rim of our view, in the darkness, below the horizon, so that nothing new is visible but in the light of what we know." — Zia Haider Rahman
               </span>
+              </p>
             </Copyright>
             <SocialIcons>
               {SOCIAL.map(({ icon, link }) => (
                 <ExternalLink key={link} href={link}>
-                  <img src={icon} alt="link" />
+                  <img src={icon} alt="link"/>
                 </ExternalLink>
               ))}
             </SocialIcons>
