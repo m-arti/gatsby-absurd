@@ -1,23 +1,27 @@
 import styled from 'styled-components';
 
-import { Container } from '@components/global';
+import {
+  Container
+} from '@components/global';
 
-export const Nav = styled.nav`
+export const Nav = styled.nav `
   padding: 16px 0;
-  background-color: ${props => props.theme.color.primary};
+  background-color: ${props => props.theme.color.navbar};
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
+  filter: drop-shadow(1px 1px 20px rgb(100, 100, 100, 0.1));
 `;
 
-export const StyledContainer = styled(Container)`
+export const StyledContainer = styled(Container)
+`
   display: flex;
   justify-content: space-between;
   align-items: center;
 `;
 
-export const NavListWrapper = styled.div`
+export const NavListWrapper = styled.div `
   ul {
     list-style: none;
     margin: 0;
@@ -28,25 +32,28 @@ export const NavListWrapper = styled.div`
     ${({ mobile }) =>
       mobile &&
       `
-        flex-direction: column;
-        margin-top: 1em;
+flex - direction: column;
+margin - top: 1 em;
 
-        > ${NavItem} {
-          margin: 0;
-          margin-top: 0.75em;
-        }
-      `};
+>
+$ {
+  NavItem
+} {
+  margin: 0;
+  margin - top: 0.75 em;
+}
+`};
   }
 `;
 
-export const NavItem = styled.li`
+export const NavItem = styled.li `
   margin: 0 0.75em;
   font-family: ${props => props.theme.font.secondary};
   ${props => props.theme.font_size.small};
 
   a {
     text-decoration: none;
-    opacity: 0.7;
+    opacity: 0.5;
     color: ${props => props.theme.color.black.regular};
   }
 
@@ -57,17 +64,17 @@ export const NavItem = styled.li`
   }
 `;
 
-export const MobileMenu = styled.div`
+export const MobileMenu = styled.div `
   width: 100%;
   background: ${props => props.theme.color.primary};
 `;
 
-export const Brand = styled.div`
+export const Brand = styled.div `
   font-family: ${props => props.theme.font.primary};
   ${props => props.theme.font_size.large};
 `;
 
-export const Mobile = styled.div`
+export const Mobile = styled.div `
   display: none;
 
   @media (max-width: ${props => props.theme.screen.md}) {

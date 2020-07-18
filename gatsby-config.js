@@ -36,8 +36,8 @@ module.exports = {
         name: `Absurd`,
         short_name: `absurd`,
         start_url: `/`,
-        background_color: `#8bd8ed`,
-        theme_color: `#8bd8ed`,
+        background_color: `#fff`,
+        theme_color: `#fff`,
         display: `minimal-ui`,
         icon: `static/favicon.svg`,
       },
@@ -45,7 +45,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`average`, `prata\:400,700`],
+        fonts: [
+          `julius sans one\:400`,
+          `cormorant garamond\:300,300i,400,400i,500,500i,600,600i,700,700i`
+        ],
       },
     },
     {

@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   }
 
   .faq {
-    border-bottom: 2px solid ${props => props.theme.color.black.lighter};
+    border-bottom: 0.5px solid ${props => props.theme.color.black.lighter};
   }
 
   .faq-title {
@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
 
     font-family: ${props => props.theme.font.secondary};
     ${props => props.theme.font_size.regular};
-    font-weight: bold;
+    font-weight: normal;
     padding: 24px;
     padding-right: 72px;
     padding-left: 16px;

@@ -1,7 +1,8 @@
 const theme = {
   font: {
-    primary: `'Prata', serif`,
-    secondary: `'Average', serif`,
+    heading: `'Cormorant Garamond', serif`,
+    primary: `'Julius Sans One'`,
+    secondary: `'Avenir Next', sans`,
   },
   font_size: {
     small: 'font-size: 20px; line-height: 30px',
@@ -12,15 +13,16 @@ const theme = {
   },
   color: {
     white: {
-      regular: '#FFFFFF',
-      dark: '#F6F6F6',
+      regular: '#fff',
+      dark: '#555',
     },
     black: {
-      lighter: '#ABA8AF',
-      light: '#564F62',
-      regular: '#211E26',
+      lighter: '#aaa',
+      light: '#555',
+      regular: '#000',
     },
-    primary: '#8bd8ed',
+    primary: '#fff',
+    navbar: 'rgb(255, 255, 255, 0.95)'
   },
   screen: {
     xs: '575px',
