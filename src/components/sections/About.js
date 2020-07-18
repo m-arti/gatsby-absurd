@@ -68,7 +68,6 @@ const About = () => (
               <h2>Always learning.</h2>
               <p>
                 I previously was a data scientist at <StyledExternalLink href="https://adoreboard.com/">Adoreboard</StyledExternalLink>. And before that, I graduated with an MEng in Aerospace Engineering from Queen's.
-
               </p>
             </div>
           </Grid>

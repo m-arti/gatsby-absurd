@@ -8,10 +8,6 @@ import ExternalLink from '@common/ExternalLink';
 
 import { ReactComponent as AirbnbLogo } from '@images/logos/airbnb.svg';
 import { ReactComponent as AppleMusicLogo } from '@images/logos/apple-music.svg';
-import { ReactComponent as CokeLogo } from '@images/logos/coca-cola.svg';
-import { ReactComponent as NodeLogo } from '@images/logos/nodejs.svg';
-import { ReactComponent as NikeLogo } from '@images/logos/nike.svg';
-import { ReactComponent as InstagramLogo } from '@images/logos/instagram.svg';
 
 const LOGOS = [
   {
@@ -22,25 +18,10 @@ const LOGOS = [
     logo: AppleMusicLogo,
     link: 'https://www.apple.com/in/music/',
   },
-  {
-    logo: CokeLogo,
-    link: 'https://coca-cola.com',
-  },
-  {
-    logo: NodeLogo,
-    link: 'https://nodejs.org',
-  },
-  {
-    logo: NikeLogo,
-    link: 'https://nike.com',
-  },
-  {
-    logo: InstagramLogo,
-    link: 'https://instagram.com',
-  },
+
 ];
 
-const UsedBy = () => (
+const Contact = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -57,10 +38,17 @@ const UsedBy = () => (
       }
     `}
     render={data => (
-      <Section id="brands" accent>
+      <Section id="@" accent>
         <StyledContainer>
+
           <div>
-            <h1>Used by biggest in tech</h1>
+            <h2>Contact Me</h2>
+            <div>
+              <br/>
+              <p>
+                Looking to get in touch?
+              </p>
+            </div>
             <LogoGrid>
               {LOGOS.map(({ logo, link }) => (
                 <ExternalLink key={link} href={link}>
@@ -106,6 +94,16 @@ const StyledContainer = styled(Container)`
   }
 `;
 
+const StyledExternalLink = styled(ExternalLink)`
+  color: inherit;
+  text-decoration: underline;
+  font-weight: 400;
+
+  &:hover {
+    color: ${props => props.theme.color.white.active};
+  }
+`;
+
 const Art = styled.figure`
   width: 600px;
   position: absolute;
@@ -123,4 +121,4 @@ const Art = styled.figure`
   }
 `;
 
-export default UsedBy;
+export default Contact;
