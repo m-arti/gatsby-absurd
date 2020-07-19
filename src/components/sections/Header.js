@@ -31,7 +31,7 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                Researcher
+                AI Researcher
                 <br />
                 & Designer
               </h1>
