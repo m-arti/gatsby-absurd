@@ -1,18 +1,18 @@
 [[redirects]]
   from = "/blog"
-  to = "https://msblog.netlify.app/blog"
+  to = "https://msblog.netlify.app"
   status = 200
   force = true
 
 [[redirects]]
   from = "/blog/*"
-  to = "https://msblog.netlify.app/blog/:splat"
+  to = "https://msblog.netlify.app/:splat"
   status = 200
   force = true
 
 [[redirects]]
   from = "/blog/static/*"
-  to = "https://msblog.netlify.app/blog/static/:splat"
+  to = "https://msblog.netlify.app/static/:splat"
   status = 200
   force = true
 
