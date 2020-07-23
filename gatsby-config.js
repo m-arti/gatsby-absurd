@@ -33,8 +33,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Absurd`,
-        short_name: `absurd`,
+        name: `Martins Samuel`,
+        short_name: `MS`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#fff`,

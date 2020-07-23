@@ -40,7 +40,7 @@ const Contact = () => (
             </div>
           </div>
           <Art>
-            <Img fluid={data.art_story.childImageSharp.fluid} />
+            <Img fluid={data.art_story.childImageSharp.fluid} fadeIn={true} durationFadeIn={3000}/>
           </Art>
         </StyledContainer>
       </Section>

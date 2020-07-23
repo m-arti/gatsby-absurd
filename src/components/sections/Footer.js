@@ -38,11 +38,11 @@ const Footer = () => (
     `}
     render={data => (
       <React.Fragment>
-        <hr/>
+        <hr style={{border: 'none', height: '0.1px', backgroundColor: '#ccc'}}/>
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
-              <p>MS</p>
+              <p style={{fontSize: '20px'}}>MS</p>
               <p style={{display: 'grid', textAlign:'left', fontWeight:400, lineHeight:1.5, fontSize:12, maxWidth:'500px'}}>
               <span>
               "Everything new is on the rim of our view, in the darkness, below the horizon, so that nothing new is visible but in the light of what we know." — Zia Haider Rahman

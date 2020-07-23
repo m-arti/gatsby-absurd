@@ -47,7 +47,7 @@ class Navbar extends Component {
         offset={-64}
       >
         {NAV_ITEMS.map(navItem => (
-          <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
+          <NavItem key={navItem} style={{fontSize: '20px'}}>{this.getNavAnchorLink(navItem)}</NavItem>
         ))}
       </Scrollspy>
     </NavListWrapper>
@@ -59,7 +59,7 @@ class Navbar extends Component {
     return (
       <Nav {...this.props}>
         <StyledContainer>
-          <h2>Martins Samuel</h2>
+          <h2 style={{fontSize: '20px'}}>Martins Samuel</h2>
           <Mobile>
             <button onClick={this.toggleMobileMenu} style={{ color: 'black' }}>
               <MenuIcon />

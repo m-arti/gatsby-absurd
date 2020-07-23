@@ -27,7 +27,7 @@ const Header = () => (
         <Container>
           <Grid>
             <Art>
-              <Img fluid={data.art_build.childImageSharp.fluid} />
+              <Img fluid={data.art_build.childImageSharp.fluid} fadeIn={true} durationFadeIn={3000}/>
             </Art>
             <Text>
               <h1>

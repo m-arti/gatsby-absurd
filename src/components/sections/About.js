@@ -57,12 +57,12 @@ const About = () => (
               </p>
             </div>
             <Art>
-              <Img fluid={data.art_fast.childImageSharp.fluid} />
+              <Img fluid={data.art_fast.childImageSharp.fluid} fadeIn={true} durationFadeIn={3000}/>
             </Art>
           </Grid>
           <Grid inverse>
             <Art>
-              <Img fluid={data.art_learn.childImageSharp.fluid} />
+              <Img fluid={data.art_learn.childImageSharp.fluid} fadeIn={true} durationFadeIn={3000}/>
             </Art>
             <div>
               <h2>Always learning.</h2>
@@ -82,7 +82,7 @@ const About = () => (
               </p>
             </div>
             <Art>
-              <Img fluid={data.art_ideas.childImageSharp.fluid} />
+              <Img fluid={data.art_ideas.childImageSharp.fluid} fadeIn={true} durationFadeIn={3000}/>
             </Art>
           </Grid>
         </Container>
