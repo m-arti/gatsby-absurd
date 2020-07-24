@@ -38,7 +38,7 @@ const Footer = () => (
     `}
     render={data => (
       <React.Fragment>
-        <hr style={{border: 'none', height: '0.1px', backgroundColor: '#ccc'}}/>
+        <hr/>
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
