@@ -24,7 +24,8 @@ const theme = {
       active: '#ff5500'
     },
     primary: '#fff',
-    navbar: 'rgb(255, 255, 255, 0.95)'
+    navbar: 'rgb(255, 255, 255, 0.95)',
+    footer: '#fff'
   },
   screen: {
     xs: '575px',
