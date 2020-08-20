@@ -11,7 +11,7 @@
   force = true
 
 [[redirects]]
-  from = "/blog/*"
+  from = "/*"
   to = "https://msblog.netlify.app/blog/:splat"
   status = 200
   force = true
