@@ -1,0 +1,3 @@
+/blog https://msblog.netlify.app/blog 200!
+/blog/* https://msblog.netlify.app/blog/:splat 200!
+/home / 300!
