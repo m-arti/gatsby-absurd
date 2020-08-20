@@ -23,8 +23,8 @@
   force = true
 
 [[redirects]]
-  from = "/app-902a8fa8ae34cc198bb2.js"
-  to = "https://msblog.netlify.app/app-902a8fa8ae34cc198bb2.js"
+  from = "/app-9a1201327d89397fe603.js"
+  to = "https://msblog.netlify.app/app-9a1201327d89397fe603.js"
   status = 301
   force = true
 
