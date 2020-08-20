@@ -1,16 +1,4 @@
 [[redirects]]
-  from = "/"
-  to = "https://mshome.netlify.app/"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/blog"
-  to = "https://msblog.netlify.app/blog"
-  status = 200
-  force = true
-
-[[redirects]]
   from = "/*"
   to = "https://msblog.netlify.app/:splat"
   status = 200
