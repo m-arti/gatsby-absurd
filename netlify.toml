@@ -5,12 +5,6 @@
   force = true
 
 [[redirects]]
-  from = "/*"
-  to = "https://msblog.netlify.app/:splat"
-  status = 200
-  force = true
-
-[[redirects]]
   from = "/blog"
   to = "https://msblog.netlify.app/blog"
   status = 200
@@ -21,3 +15,40 @@
   to = "https://msblog.netlify.app/blog/:splat"
   status = 200
   force = false 
+
+
+[[redirects]]
+  from = "/app-902a8fa8ae34cc198bb2.js"
+  to = "https://msblog.netlify.app/app-902a8fa8ae34cc198bb2.js"
+  status = 200
+  force = true
+  
+[[redirects]]
+  from = "/commons-eb9439cb523bb6f2972d.js"
+  to = "https://msblog.netlify.app/commons-eb9439cb523bb6f2972d.js"
+  status = 200
+  force = true
+  
+[[redirects]]
+  from = "/component---node-modules-narative-gatsby-theme-novela-src-templates-article-template-tsx-30fd28db30ab459958af.js"
+  to = "https://msblog.netlify.app/component---node-modules-narative-gatsby-theme-novela-src-templates-article-template-tsx-30fd28db30ab459958af.js"
+  status = 200
+  force = true  
+  
+[[redirects]]
+  from = "/component---node-modules-narative-gatsby-theme-novela-src-templates-articles-template-tsx-aa33c64b3247d2415e2c.js"
+  to = "https://msblog.netlify.app/component---node-modules-narative-gatsby-theme-novela-src-templates-articles-template-tsx-aa33c64b3247d2415e2c.js"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/styles-692f010afac497c3933e.js"
+  to = "https://msblog.netlify.app/styles-692f010afac497c3933e.js"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/webpack-runtime-d68df3c98345631927b8.js"
+  to = "https://msblog.netlify.app/webpack-runtime-d68df3c98345631927b8.js"
+  status = 200
+  force = true
