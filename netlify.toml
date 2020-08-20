@@ -5,9 +5,9 @@
   force = true
 
 [[redirects]]
-  from = "/*"
+  from = "/blog/*"
   to = "https://msblog.netlify.app/blog/:splat"
-  status = 200
+  status = 301
   force = true
 
 [[redirects]]
@@ -18,5 +18,5 @@
 [[redirects]]
   from = "/home"
   to = "/"
-  status = 200
+  status = 301
   force = true
