@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/*"
-  to = "https://msblog.netflify.app/:splat"
+  to = "https://msblog.netflify.app/blog/:splat"
   status = 200
   force = true
