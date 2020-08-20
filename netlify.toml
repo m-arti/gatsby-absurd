@@ -6,6 +6,6 @@
 
 [[redirects]]
   from = "/*"
-  to = "https://msblog.netlify.app/blog/:splat"
+  to = "https://msblog.netlify.app/:splat"
   status = 200
   force = false
