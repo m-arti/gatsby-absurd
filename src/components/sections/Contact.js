@@ -12,10 +12,10 @@ const Contact = () => (
       query {
         art_story: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "tell_story" }
+          name: { eq: "contact" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 1200) {
+            fluid(maxWidth: 760) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
@@ -31,6 +31,7 @@ const Contact = () => (
             <div>
               <p>
                 Want to collaborate, or share an idea or a thought?
+                <br/>Do get in touch!
                 <br/><br/>
                 <StyledExternalLink href="https://twitter.com/m_arti">Twitter</StyledExternalLink>
                 <br/>
@@ -78,18 +79,22 @@ const StyledExternalLink = styled(ExternalLink)`
 
 const Art = styled.figure`
   width: 600px;
+  max-width: 500px;
   position: absolute;
-  top: -12%;
+  top: -20%;
   right: 50%;
 
   @media (max-width: ${props => props.theme.screen.lg}) {
     top: 0;
-    right: 65%;
+    right: 50%;
     width: 500px;
   }
 
   @media (max-width: ${props => props.theme.screen.md}) {
-    display: none;
+    right: 5%;
+    max-width: 380px;
+    width: 100%;
+    margin-top: 200px;
   }
 `;
 

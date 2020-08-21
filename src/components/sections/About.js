@@ -12,7 +12,7 @@ const About = () => (
       query {
         art_fast: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "fast" }
+          name: { eq: "hello" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -23,7 +23,7 @@ const About = () => (
 
         art_learn: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "learn_yourself" }
+          name: { eq: "always_learning" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -34,7 +34,7 @@ const About = () => (
 
         art_ideas: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "ideas" }
+          name: { eq: "curiosities" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -75,7 +75,8 @@ const About = () => (
             <div>
               <h2>Curiosities</h2>
               <p>
-                I'm interested in art, literature and jazz music. Every now and then, I paint, take <StyledExternalLink href="https://www.flickr.com/photos/127929628@N07">photographs</StyledExternalLink>, and create <StyledExternalLink href="https://vimeo.com/martinssamuel">animations</StyledExternalLink>.
+                I'm interested in art, literature and jazz music.
+                <br/>Every now and then, I paint, take <StyledExternalLink href="https://www.flickr.com/photos/127929628@N07">photographs</StyledExternalLink>, and create <StyledExternalLink href="https://vimeo.com/martinssamuel">animations</StyledExternalLink>.
                 <br/>
                 <br/>
                 You can read about my explorations and other writings on my <StyledExternalLink href="https://martinssamuel.com/blog">blog</StyledExternalLink>.
