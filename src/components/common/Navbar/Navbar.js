@@ -44,8 +44,7 @@ class Navbar extends Component {
         items={NAV_ITEMS.map(item => item.toLowerCase())}
         currentClassName="active"
         mobile={mobile}
-        offset={-64}
-      >
+        offset={-64} >
         {NAV_ITEMS.map(navItem => (
           <NavItem key={navItem} style={{fontSize: '20px'}}>{this.getNavAnchorLink(navItem)}</NavItem>
         ))}
@@ -59,15 +58,21 @@ class Navbar extends Component {
     return (
       <Nav {...this.props}>
         <StyledContainer>
-          <h2 style={{fontSize: '20px'}}>Martins Samuel</h2>
+          <h2 style={{fontSize: '20px'}}>
+            <a style={{color:'black', textDecoration:'none'}} href="https://martinssamuel.com/">
+            Martins Samuel
+            </a>
+          </h2>
+
           <Mobile>
-            <button onClick={this.toggleMobileMenu} style={{ color: 'black' }}>
-              <MenuIcon />
+            <button onClick={this.toggleMobileMenu} style={{color: 'black'}}>
+              <MenuIcon/>
             </button>
           </Mobile>
 
           <Mobile hide>{this.getNavList({})}</Mobile>
         </StyledContainer>
+
         <Mobile>
           {mobileMenuOpen && (
             <MobileMenu>

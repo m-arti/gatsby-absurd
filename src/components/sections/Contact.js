@@ -79,7 +79,6 @@ const StyledExternalLink = styled(ExternalLink)`
 
 const Art = styled.figure`
   width: 600px;
-  max-width: 500px;
   position: absolute;
   top: -20%;
   right: 50%;
@@ -91,11 +90,10 @@ const Art = styled.figure`
   }
 
   @media (max-width: ${props => props.theme.screen.md}) {
-    right: 5%;
-    max-width: 380px;
     width: 100%;
     margin-top: 200px;
   }
+
 `;
 
 export default Contact;
