@@ -30,7 +30,7 @@ const Header = () => (
               <Img fluid={data.art_build.childImageSharp.fluid} fadeIn={true} durationFadeIn={3000}/>
             </Art>
             <Text>
-              <h1>
+              <h1 style={{fontWeight: 400}}>
                 AI Researcher
                 <br />
                 & Designer

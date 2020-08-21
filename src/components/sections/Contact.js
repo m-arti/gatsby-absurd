@@ -27,7 +27,7 @@ const Contact = () => (
         <StyledContainer>
 
           <div>
-            <h2>Contact</h2>
+            <h2 style={{fontWeight: 400}}>Contact</h2>
             <div>
               <p>
                 Want to collaborate, or share an idea or a thought?

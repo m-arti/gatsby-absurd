@@ -1,7 +1,7 @@
 const theme = {
   font: {
-    heading: `'Cormorant Garamond', serif`,
-    primary: `'Julius Sans One'`,
+    heading: `'Libre Caslon Display'`,
+    primary: `'Nanum Myeongjo'`,
     secondary: `'Avenir Next', sans`,
   },
   font_size: {

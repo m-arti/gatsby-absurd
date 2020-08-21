@@ -46,8 +46,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `julius sans one\:400`,
-          `cormorant garamond\:300,300i,400,400i,500,500i,600,600i,700,700i`
+          `nanum myeongjo\:400,700,800`,
+          `noto sans\:300,400,500,600,700`
         ],
       },
     },

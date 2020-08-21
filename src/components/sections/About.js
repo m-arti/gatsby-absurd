@@ -49,7 +49,7 @@ const About = () => (
         <Container>
           <Grid>
             <div>
-              <h2>Hello!</h2>
+              <h2 style={{fontWeight: 400}}>Hello there!</h2>
               <p>
                 Welcome to my digital palette, where I share my explorations and little discoveries.
                 <br/><br/>
@@ -65,7 +65,7 @@ const About = () => (
               <Img fluid={data.art_learn.childImageSharp.fluid} fadeIn={true} durationFadeIn={3000}/>
             </Art>
             <div>
-              <h2>Always learning.</h2>
+              <h2 style={{fontWeight: 400}}>Always learning.</h2>
               <p>
                 I previously was a data scientist at <StyledExternalLink href="https://adoreboard.com/">Adoreboard</StyledExternalLink>. And before that, I graduated with an MEng in Aerospace Engineering from Queen's.
               </p>
@@ -73,7 +73,7 @@ const About = () => (
           </Grid>
           <Grid>
             <div>
-              <h2>Curiosities</h2>
+              <h2 style={{fontWeight: 400}}>Curiosities</h2>
               <p>
                 I'm interested in art, literature and jazz music.
                 <br/>Every now and then, I paint, take <StyledExternalLink href="https://www.flickr.com/photos/127929628@N07">photographs</StyledExternalLink>, and create <StyledExternalLink href="https://vimeo.com/martinssamuel">animations</StyledExternalLink>.

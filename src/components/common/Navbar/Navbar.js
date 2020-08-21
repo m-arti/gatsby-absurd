@@ -59,8 +59,8 @@ class Navbar extends Component {
       <Nav {...this.props}>
         <StyledContainer>
           <h2 style={{fontSize: '20px'}}>
-            <a style={{color:'black', textDecoration:'none'}} href="https://martinssamuel.com/">
-            Martins Samuel
+            <a style={{color:'black', textDecoration:'none', letterSpacing: '3px'}} href="https://martinssamuel.com/">
+            MARTINS SAMUEL
             </a>
           </h2>
 
