@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/"
-  to = "https://mshome.netlify.app/"
+  to = "https://mshome.netlify.app"
   status = 200
   force = true
   
