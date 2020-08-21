@@ -1,8 +1,8 @@
 const theme = {
   font: {
-    heading: `'Libre Caslon Display'`,
+    heading: `'Nanum Myeongjo'`,
     primary: `'Nanum Myeongjo'`,
-    secondary: `'Avenir Next', sans`,
+    secondary: `'Work Sans'` //`'Avenir Next', sans`,
   },
   font_size: {
     small: 'font-size: 20px; line-height: 30px',

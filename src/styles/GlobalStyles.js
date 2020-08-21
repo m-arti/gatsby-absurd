@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: ${props => props.theme.font.secondary};
+    color: ${props => props.theme.color.black.regular};
   }
 
   h1, h2, h3, p {
@@ -34,7 +35,7 @@ const GlobalStyles = createGlobalStyle`
 
   p {
     ${props => props.theme.font_size.regular};
-    color: ${props => props.theme.color.black.light};
+    color: ${props => props.theme.color.black.regular};
   }
 
   @media (max-width: ${props => props.theme.screen.sm}) {

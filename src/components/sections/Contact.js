@@ -29,7 +29,7 @@ const Contact = () => (
           <div>
             <h2 style={{fontWeight: 400}}>Contact</h2>
             <div>
-              <p>
+              <p style={{fontWeight: 300}}>
                 Want to collaborate, or share an idea or a thought?
                 <br/>Do get in touch!
                 <br/><br/>
