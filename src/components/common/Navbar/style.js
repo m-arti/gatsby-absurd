@@ -53,9 +53,9 @@ export const NavItem = styled.li `
 
   a {
     text-decoration: none;
-    opacity: 0.5;
+    opacity: 0.25;
     color: ${props => props.theme.color.black.regular};
-    font-weight: 200;
+    font-weight: 300;
   }
 
   &:hover {

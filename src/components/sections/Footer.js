@@ -6,8 +6,10 @@ import { StaticQuery, graphql } from 'gatsby';
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
+import AngelListIcon from '@static/icons/angellist.svg';
 import GithubIcon from '@static/icons/github.svg';
 import TwitterIcon from '@static/icons/twitter.svg';
+
 
 const SOCIAL = [
   {
@@ -17,6 +19,10 @@ const SOCIAL = [
   {
     icon: TwitterIcon,
     link: 'https://twitter.com/m_arti',
+  },
+  {
+    icon: AngelListIcon,
+    link: 'https://angel.co/u/martins-samuel',
   },
 ];
 

@@ -98,11 +98,13 @@ const Text = styled.div`
 
 const StyledExternalLink = styled(ExternalLink)`
   color: inherit;
+  opacity: 0.5;
   text-decoration: none;
-  font-weight: 200;
+  font-weight: 300;
 
   &:hover {
     color: ${props => props.theme.color.white.active};
+    opacity: 1;
   }
 `;
 
