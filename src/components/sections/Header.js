@@ -32,13 +32,14 @@ const Header = () => (
             <Text>
               <h1 style={{fontWeight: 400}}>
                 AI Researcher
-                <br />
+                <br/>
                 & Designer
               </h1>
-              <br />
+              <br/>
+              <br/>
               <p>
                 <StyledExternalLink href="https://martinssamuel.com/blog">
-                  Read my writings &#187;
+                  Read my writings
                 </StyledExternalLink>
               </p>
             </Text>
@@ -96,15 +97,23 @@ const Text = styled.div`
   }
 `;
 
+
 const StyledExternalLink = styled(ExternalLink)`
-  color: inherit;
-  opacity: 0.5;
+  color: ${props => props.theme.color.white.regular};
+  font-size: 15px;
+  font-weight: 400;
   text-decoration: none;
-  font-weight: 300;
+
+  /* thanks to Hima Vincent for gradient hover effect (https://codemyui.com/pure-css-gradient-button-hover-effect) */
+  flex-wrap: wrap;
+  padding: 10px;
+  border-radius: 3px;
+  background-image: linear-gradient(to right, #fdb085 0%, #ff5500 51%, #fda085 100%);
+  background-size: 200% auto;
+  transition: 0.5s;
 
   &:hover {
-    color: ${props => props.theme.color.white.active};
-    opacity: 1;
+    background-position: right center;
   }
 `;
 

@@ -44,12 +44,12 @@ const Footer = () => (
     `}
     render={data => (
       <React.Fragment>
-        <hr style={{height: '0.1px', display: 'block', color: '#ccc', backgroundColor: '#ccc'}} />
+        <hr style={{color:'#ccc', backgroundColor:'#ccc'}} />
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
-              <p style={{fontSize: '15px', color:'#000'}}>With 🧡,&nbsp; MS</p>
-              <p style={{display: 'grid', textAlign:'left', fontWeight:400, lineHeight:1.5, fontSize:12, maxWidth:'500px'}}>
+              <p style={{fontSize: '12px', color:'#000', fontWeight:400}}>With 🧡, MS (2020)</p>
+              <p style={{display: 'grid', textAlign:'left', fontWeight:300, lineHeight:1.5, fontSize:'12px', maxWidth:'500px'}}>
               <span>
               "Everything new is on the rim of our view, in the darkness, below the horizon, so that nothing new is visible but in the light of what we know." — Zia Haider Rahman
               </span>
@@ -63,13 +63,11 @@ const Footer = () => (
               ))}
             </SocialIcons>
           </StyledContainer>
-          <p style={{fontSize:12, color: 'gray', display:'grid', textAlign:'center', fontWeight:400, lineHeight:1.25, marginTop:'100px', marginBottom:'0px'}}>
+          <p style={{fontSize:12, color: 'gray', display:'grid', textAlign:'center', fontWeight:300, lineHeight:1.25, marginTop:'100px', marginBottom:'0px'}}>
             <span>
               Illustrations — <StyledExternalLink href="https://absurd.design/m_arti">absurd.design</StyledExternalLink>
               &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;
               Icons — <StyledExternalLink href="https://icons8.com">Icons8</StyledExternalLink>
-              &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;
-              Theme — <StyledExternalLink href="https://github.com/m-arti/ms-main">Gatsby Absurd</StyledExternalLink>
             </span>
           </p>
         </FooterWrapper>
@@ -137,11 +135,13 @@ const StyledContainer = styled(Container)`
 
 const StyledExternalLink = styled(ExternalLink)`
   color: inherit;
-  text-decoration: underline;
-  font-weight: 400;
+  text-decoration: none;
+  border-bottom: ${props => props.theme.color.white.lighter} 0.15em solid;
+  transition: 0.5s;
 
   &:hover {
     color: ${props => props.theme.color.white.active};
+    text-decoration: none;
   }
 `;
 

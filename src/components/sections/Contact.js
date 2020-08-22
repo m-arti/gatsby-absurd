@@ -69,11 +69,13 @@ const StyledContainer = styled(Container)`
 
 const StyledExternalLink = styled(ExternalLink)`
   color: inherit;
-  text-decoration: underline;
-  font-weight: 400;
+  text-decoration: none;
+  border-bottom: ${props => props.theme.color.white.lighter} 0.15em solid;
+  transition: 0.5s;
 
   &:hover {
     color: ${props => props.theme.color.white.active};
+    text-decoration: none;
   }
 `;
 

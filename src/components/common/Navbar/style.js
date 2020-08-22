@@ -5,7 +5,7 @@ import {
 } from '@components/global';
 
 export const Nav = styled.nav `
-  padding: 16px 0;
+  padding: 15px 0;
   background-color: ${props => props.theme.color.navbar};
   position: fixed;
   width: 100%;
@@ -53,15 +53,16 @@ export const NavItem = styled.li `
 
   a {
     text-decoration: none;
-    opacity: 0.25;
+    opacity: 0.5;
     color: ${props => props.theme.color.black.regular};
-    font-weight: 300;
+    font-weight: 400;
+    transition: 0.5s;
   }
 
   &:hover {
     a {
-      opacity: 0.5;
-      color: ${props => props.theme.color.black.active};
+      opacity: 0.25;
+      color: ${props => props.theme.color.black.light};
     }
   }
 

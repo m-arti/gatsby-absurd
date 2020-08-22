@@ -14,6 +14,8 @@ const theme = {
   color: {
     white: {
       regular: '#fff',
+      lighter: '#ddd',
+      light: '#ccc',
       dark: '#555',
       active: '#ff5500'
     },
