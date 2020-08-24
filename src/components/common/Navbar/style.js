@@ -80,7 +80,7 @@ export const NavItem = styled.li `
 
 export const MobileMenu = styled.div `
   width: 100%;
-  background: ${props => props.theme.color.primary};
+  background: none;
 `;
 
 export const Brand = styled.div `
