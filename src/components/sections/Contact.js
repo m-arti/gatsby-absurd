@@ -53,6 +53,7 @@ const StyledContainer = styled(Container)`
   display: flex;
   justify-content: flex-end;
   position: relative;
+  margin-top: -70px;
 
   p {
     font-size: 20px;
@@ -76,6 +77,7 @@ const StyledExternalLink = styled(ExternalLink)`
   &:hover {
     color: ${props => props.theme.color.white.active};
     text-decoration: none;
+    border-bottom: ${props => props.theme.color.white.light} 0.15em solid;
   }
 `;
 

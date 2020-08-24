@@ -8,13 +8,14 @@ export const Nav = styled.nav `
   padding: 15px 0;
   /* background-color: ${props => props.theme.color.navbar}; */
   background-color: rgba(255, 255, 255, .5);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(5px);
 
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
-  filter: drop-shadow(0px 1px 20px rgb(100, 100, 100, 0.2));
+  /* filter: drop-shadow(0px 1px 20px rgb(100, 100, 100, 0.2)); */
+  box-shadow:0px -5px 35px #eeeeee;
 `;
 
 export const StyledContainer = styled(Container)

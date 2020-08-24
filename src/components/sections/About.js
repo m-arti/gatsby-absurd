@@ -151,6 +151,7 @@ const StyledExternalLink = styled(ExternalLink)`
   &:hover {
     color: ${props => props.theme.color.white.active};
     text-decoration: none;
+    border-bottom: ${props => props.theme.color.white.light} 0.15em solid;
   }
 `;
 

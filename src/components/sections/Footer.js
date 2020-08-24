@@ -84,6 +84,11 @@ const SocialIcons = styled.div`
     margin: 0 20px;
     width: 25px;
     height: 25px;
+    transition: 0.5s;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
   }
 
   @media (max-width: ${props => props.theme.screen.sm}) {
@@ -142,6 +147,7 @@ const StyledExternalLink = styled(ExternalLink)`
   &:hover {
     color: ${props => props.theme.color.white.active};
     text-decoration: none;
+    border-bottom: ${props => props.theme.color.white.light} 0.15em solid;
   }
 `;
 
