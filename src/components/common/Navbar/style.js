@@ -6,7 +6,10 @@ import {
 
 export const Nav = styled.nav `
   padding: 15px 0;
-  background-color: ${props => props.theme.color.navbar};
+  /* background-color: ${props => props.theme.color.navbar}; */
+  background-color: rgba(255, 255, 255, .5);
+  backdrop-filter: blur(4px);
+
   position: fixed;
   width: 100%;
   top: 0;

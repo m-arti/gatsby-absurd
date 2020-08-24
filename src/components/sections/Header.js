@@ -103,17 +103,21 @@ const StyledExternalLink = styled(ExternalLink)`
   font-size: 15px;
   font-weight: 400;
   text-decoration: none;
+  display: inline-block;
 
   /* thanks to Hima Vincent for gradient hover effect (https://codemyui.com/pure-css-gradient-button-hover-effect) */
   flex-wrap: wrap;
-  padding: 10px;
+  padding: 5px 15px 5px 15px;
   border-radius: 3px;
   background-image: linear-gradient(to right, #fdb085 0%, #ff5500 51%, #fda085 100%);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1), 0 1px 20px 0 rgba(0, 0, 0, 0);
   background-size: 200% auto;
   transition: 0.5s;
 
   &:hover {
+    transform: translateY(-3px);
     background-position: right center;
+    box-shadow: 0 5px 7px 0 rgba(0,0,0,.1), 0 1px 10px 0 rgba(0,0,0,.1);
   }
 `;
 

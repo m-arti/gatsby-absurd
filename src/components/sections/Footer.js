@@ -65,7 +65,7 @@ const Footer = () => (
           </StyledContainer>
           <p style={{fontSize:12, color: 'gray', display:'grid', textAlign:'center', fontWeight:300, lineHeight:1.25, marginTop:'100px', marginBottom:'0px'}}>
             <span>
-              Illustrations — <StyledExternalLink href="https://absurd.design/m_arti">absurd.design</StyledExternalLink>
+              Illustrations — <StyledExternalLink href="https://absurd.design">absurd.design</StyledExternalLink>
               &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;
               Icons — <StyledExternalLink href="https://icons8.com">Icons8</StyledExternalLink>
             </span>
