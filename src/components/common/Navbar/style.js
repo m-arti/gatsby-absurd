@@ -14,7 +14,7 @@ export const Nav = styled.nav `
   width: 100%;
   top: 0;
   z-index: 1000;
-  filter: drop-shadow(1px 1px 20px rgb(100, 100, 100, 0.1));
+  filter: drop-shadow(0px 1px 20px rgb(100, 100, 100, 0.2));
 `;
 
 export const StyledContainer = styled(Container)
