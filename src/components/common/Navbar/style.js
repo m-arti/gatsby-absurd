@@ -8,7 +8,9 @@ export const Nav = styled.nav `
   padding: 15px 0;
   /* background-color: ${props => props.theme.color.navbar}; */
   background-color: rgba(255, 255, 255, .5);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  -moz-backdrop-filter: blur(7px);
 
   position: fixed;
   width: 100%;

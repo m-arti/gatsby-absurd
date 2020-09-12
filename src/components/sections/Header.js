@@ -34,6 +34,7 @@ const Header = () => (
                 AI Researcher
                 <br/>
                 & Designer
+                <br/>
               </h1>
               <br/>
               <br/>
@@ -96,7 +97,6 @@ const Text = styled.div`
     justify-self: start;
   }
 `;
-
 
 const StyledExternalLink = styled(ExternalLink)`
   color: ${props => props.theme.color.white.regular};
