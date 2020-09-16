@@ -39,7 +39,7 @@ const Header = () => (
               <br/>
               <br/>
               <p>
-                <StyledExternalLink href="https://martinssamuel.com/blog">
+                <StyledExternalLink href="https://msblog.netlify.app/blog">
                   Read my writings
                 </StyledExternalLink>
               </p>
