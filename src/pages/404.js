@@ -15,7 +15,9 @@ const NotFoundPage = () => (
       <p style={{fontWeight:'300'}}>Sorry, that page does not exist. <br></br> It may have been lost.</p>
       <br></br>
       <p style={{fontWeight:'300'}}>
-        <a style={{color:'#ff5500', textDecoration:'none'}} href="https://martinssamuel.com/">← 🌍 Homepage</a>
+        <a style={{color:'#ff5500', textDecoration:'none'}} href="https://martinssamuel.com/">
+          ← <span role="img" aria-label="globe">🌍</span> Homepage
+        </a>
       </p>
     </Container>
   </Layout>

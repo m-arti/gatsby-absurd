@@ -53,7 +53,7 @@ const About = () => (
               <p style={{fontWeight: 300}}>
                 Welcome to my digital palette, where I share my explorations and little discoveries.
                 <br/><br/>
-                I'm a PhD student in Computer Science at Queen's University Belfast researching fake news detection using machine learning.
+                I'm a PhD student in Computer Science at Queen's University Belfast researching misinformation detection using machine learning.
               </p>
             </div>
             <Art>
@@ -75,7 +75,7 @@ const About = () => (
             <div>
               <h2 style={{fontWeight: 400}}>Curiosities</h2>
               <p style={{fontWeight: 300}}>
-                I'm interested in art, literature and jazz music.
+                I'm interested in art, (mostly nonfiction) literature and jazz music.
                 <br/>Every now and then, I paint, take <StyledExternalLink href="https://www.flickr.com/photos/127929628@N07">photographs</StyledExternalLink>, and create <StyledExternalLink href="https://vimeo.com/martinssamuel">animations</StyledExternalLink>.
                 <br/>
                 <br/>

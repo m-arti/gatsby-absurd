@@ -35,6 +35,8 @@ const Header = () => (
                 <br/>
                 & Designer
                 <br/>
+                <p style={{marginTop:'30px', marginBottom:'-10px', maxWidth:'400px', fontFamily:'Work Sans', fontSize:'20px', fontWeight:'300'}}>Currently studying misinformation detection using machine learning.</p>
+                <br/>
               </h1>
               <br/>
               <br/>
@@ -109,7 +111,7 @@ const StyledExternalLink = styled(ExternalLink)`
   flex-wrap: wrap;
   padding: 5px 15px 5px 15px;
   border-radius: 3px;
-  background-image: linear-gradient(to right, #fdb085 0%, #ff5500 51%, #fda085 100%);
+  background-image: linear-gradient(to right, #fdb085 0%, #d15010 /*#ff5500*/ 51%, #fda085 100%);
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1), 0 1px 20px 0 rgba(0, 0, 0, 0);
   background-size: 200% auto;
   transition: 0.5s;

@@ -48,7 +48,7 @@ const Footer = () => (
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
-              <p style={{fontSize: '12px', color:'#000', fontWeight:400}}>With 🧡, MS (2020)</p>
+              <p style={{fontSize: '12px', color:'#000', fontWeight:400}}>With <span role="img" aria-label="heart">🧡</span>, MS (2020)</p>
               <p style={{display: 'grid', textAlign:'left', fontWeight:300, lineHeight:1.5, fontSize:'12px', maxWidth:'500px'}}>
               <span>
               "Everything new is on the rim of our view, in the darkness, below the horizon, so that nothing new is visible but in the light of what we know." — Zia Haider Rahman
