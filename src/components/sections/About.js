@@ -76,7 +76,7 @@ const About = () => (
               <h2 style={{fontWeight: 400}}>Curiosities</h2>
               <p style={{fontWeight: 300}}>
                 I'm interested in art, (mostly nonfiction) literature and jazz music.
-                <br/>Every now and then, I <StyledExternalLink href="https://martinssamuel.com/blog/my-paintings-and-drawings">paint</StyledExternalLink>, take <StyledExternalLink href="https://www.flickr.com/photos/127929628@N07">photographs</StyledExternalLink>, and create <StyledExternalLink href="https://vimeo.com/martinssamuel">animations</StyledExternalLink>.
+                <br/>Every now and then, I <StyledExternalLink href="https://msblog.netlify.app/blog/my-paintings-and-drawings">paint</StyledExternalLink>, take <StyledExternalLink href="https://www.flickr.com/photos/127929628@N07">photographs</StyledExternalLink>, and create <StyledExternalLink href="https://vimeo.com/martinssamuel">animations</StyledExternalLink>.
                 <br/>
                 <br/>
                 You can read about my explorations and other writings on my <StyledExternalLink href="https://martinssamuel.com/blog">blog</StyledExternalLink>.
