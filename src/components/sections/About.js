@@ -49,7 +49,7 @@ const About = () => (
         <Container>
           <Grid>
             <div>
-              <h2 style={{fontWeight: 400}}>Hello world!</h2>
+              <h2 style={{fontWeight: 400}}>Hello there!</h2>
               <p style={{fontWeight: 300}}>
                 Welcome to my digital palette, where I share my explorations and little discoveries.
                 <br/><br/>
@@ -67,7 +67,11 @@ const About = () => (
             <div>
               <h2 style={{fontWeight: 400}}>Always learning</h2>
               <p style={{fontWeight: 300}}>
-                I previously was a data scientist at <StyledExternalLink href="https://adoreboard.com/">Adoreboard</StyledExternalLink>. And before that, I graduated with an MEng in Aerospace Engineering from Queen's.
+                I previously was a data scientist at <StyledExternalLink href="https://adoreboard.com/">Adoreboard</StyledExternalLink>. And before that, I graduated with an MEng in Aerospace Engineering from Queen's. <br/>
+                <br/>
+                Besides my course, I loved learning about drones and startups at <StyledExternalLink href="https://www.evolvedynamics.com/">Evolve Dynamics</StyledExternalLink>, and about metadata, cataloguing and archiving at <StyledExternalLink href="https://www.qub.ac.uk/about/Campus-and-facilities/The-McClay-Library/">the McClay Library</StyledExternalLink>.
+
+
               </p>
             </div>
           </Grid>
@@ -75,11 +79,11 @@ const About = () => (
             <div>
               <h2 style={{fontWeight: 400}}>Curiosities</h2>
               <p style={{fontWeight: 300}}>
-                I'm interested in art, (mostly nonfiction) literature and jazz music.
-                <br/>Every now and then, I <StyledExternalLink href="https://msblog.netlify.app/blog/my-paintings-and-drawings">paint</StyledExternalLink>, take <StyledExternalLink href="https://www.flickr.com/photos/127929628@N07">photographs</StyledExternalLink>, and create <StyledExternalLink href="https://vimeo.com/martinssamuel">animations</StyledExternalLink>.
+                Amongst my interests, I'm most fond of art, literature and jazz music.
+                <br/>Every now and then, I <StyledExternalLink href="https://blog.martinssamuel.com/my-paintings-and-drawings">paint</StyledExternalLink>, take <StyledExternalLink href="https://www.flickr.com/photos/127929628@N07">photographs</StyledExternalLink>, and create <StyledExternalLink href="https://vimeo.com/martinssamuel">animations</StyledExternalLink>.
                 <br/>
                 <br/>
-                You can read about my explorations and other writings on my <StyledExternalLink href="https://martinssamuel.com/blog">blog</StyledExternalLink>.
+                You can read about my explorations and other writings on my <StyledExternalLink href="https://blog.martinssamuel.com">blog</StyledExternalLink>. I share some thoughts and ideas in <StyledExternalLink href="https://notes.martinssamuel.com">this notebook</StyledExternalLink>.
               </p>
             </div>
             <Art>

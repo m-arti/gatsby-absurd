@@ -48,12 +48,13 @@ const Footer = () => (
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
-              <p style={{fontSize: '12px', color:'#000', fontWeight:400}}>With <span role="img" aria-label="heart">🧡</span>, MS (2020)</p>
-              <p style={{display: 'grid', textAlign:'left', fontWeight:300, lineHeight:1.5, fontSize:'12px', maxWidth:'500px'}}>
+              <p style={{fontSize:'14.36px', maxWidth:'500px', color:'#000', display: 'grid', textAlign:'left', fontWeight:300, lineHeight:1.5}}>
               <span>
-              "Everything new is on the rim of our view, in the darkness, below the horizon, so that nothing new is visible but in the light of what we know." — Zia Haider Rahman
+              Weniger, aber besser.
               </span>
               </p>
+              <p style={{fontSize: '12.36px', color:'gray', fontWeight:300}}>With <span role="img" aria-label="heart">🧡</span> MS (2021)</p>
+
             </Copyright>
             <SocialIcons>
               {SOCIAL.map(({ icon, link }) => (
@@ -63,7 +64,7 @@ const Footer = () => (
               ))}
             </SocialIcons>
           </StyledContainer>
-          <p style={{fontSize:12, color: 'gray', display:'grid', textAlign:'center', fontWeight:300, lineHeight:1.25, marginTop:'100px', marginBottom:'0px'}}>
+          <p style={{fontSize:'14.36px', color: 'gray', display:'grid', textAlign:'center', fontWeight:300, lineHeight:1.25, marginTop:'50px', marginBottom:'0px'}}>
             <span>
               Illustrations — <StyledExternalLink href="https://absurd.design">absurd.design</StyledExternalLink>
               &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;

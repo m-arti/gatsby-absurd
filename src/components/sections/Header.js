@@ -38,10 +38,8 @@ const Header = () => (
                 <p style={{marginTop:'30px', marginBottom:'-10px', maxWidth:'400px', fontFamily:'Work Sans', fontSize:'20px', fontWeight:'300'}}>Currently studying misinformation detection using machine learning.</p>
                 <br/>
               </h1>
-              <br/>
-              <br/>
               <p>
-                <StyledExternalLink href="https://msblog.netlify.app/blog">
+                <StyledExternalLink href="https://blog.martinssamuel.com">
                   Read my writings
                 </StyledExternalLink>
               </p>
