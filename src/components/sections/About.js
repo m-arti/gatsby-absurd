@@ -53,7 +53,7 @@ const About = () => (
               <p style={{fontWeight: 300}}>
                 Welcome to my digital palette, where I share my explorations and little discoveries.
                 <br/><br/>
-                I'm a PhD student in Computer Science at Queen's University Belfast researching misinformation detection using machine learning.
+                I'm a PhD student in Computer Science at Queen's University Belfast <StyledExternalLink href="https://blog.martinssamuel.com/my-research">researching</StyledExternalLink> mis-/dis-information detection using machine learning.
               </p>
             </div>
             <Art>
