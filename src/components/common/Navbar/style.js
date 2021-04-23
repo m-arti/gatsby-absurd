@@ -59,7 +59,7 @@ export const NavItem = styled.li `
 
   a {
     text-decoration: none;
-    opacity: 0.5;
+    opacity: 0.3;
     color: ${props => props.theme.color.black.regular};
     font-weight: 400;
     transition: 0.5s;
@@ -76,7 +76,7 @@ export const NavItem = styled.li `
     a {
       opacity: 1;
       color: ${props => props.theme.color.black.active};
-      font-weight: 400;
+      font-weight: 500;
     }
   }
 `;

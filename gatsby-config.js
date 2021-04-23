@@ -1,7 +1,19 @@
 const path = require('path');
 
 module.exports = {
+  siteMetadata: {
+    title: `Martins Samuel`,
+    author: `Martins Samuel`,
+    description: `Martins Samuel`,
+    homepage: `https://martinssamuel.com`,
+    siteUrl: `https://martinssamuel.com`,
+  },
+
   plugins: [
+
+    `gatsby-plugin-styled-components`,
+
+    // gatsby-plugin-react-helmet
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-svgr`,
@@ -13,7 +25,8 @@ module.exports = {
         },
       },
     },
-    `gatsby-plugin-styled-components`,
+
+    // gatsby-source-filesystem
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -28,8 +41,12 @@ module.exports = {
         path: `${__dirname}/src/images/art`,
       },
     },
+
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    
+
+    // gatsby-plugin-manifest
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -42,6 +59,8 @@ module.exports = {
         icon: `static/favicon.png`,
       },
     },
+
+    // gatsby-plugin-google-fonts
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -51,6 +70,8 @@ module.exports = {
         ],
       },
     },
+
+    // gatsby-plugin-alias-imports
     {
       resolve: `gatsby-plugin-alias-imports`,
       options: {

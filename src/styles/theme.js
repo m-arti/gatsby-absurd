@@ -18,13 +18,13 @@ const theme = {
       lighter: '#ddd',
       light: '#ccc',
       dark: '#555',
-      active: '#dd5511' // ##c64d10 #dd5511 #ff5500
+      active: '#000' // #c64d10 #dd5511
     },
     black: {
       lighter: '#aaa',
       light: '#555',
       regular: '#000',
-      active: '#dd5511' // ##c64d10 #dd5511 #ff5500
+      active: '#000' // #c64d10 #dd5511 #ff5500
     },
     primary: '#fff',
     navbar: 'rgb(255, 255, 255, 0.95)',

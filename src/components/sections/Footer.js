@@ -44,7 +44,7 @@ const Footer = () => (
     `}
     render={data => (
       <React.Fragment>
-        <hr style={{color:'#ccc', backgroundColor:'#ccc'}} />
+
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
@@ -99,7 +99,9 @@ const SocialIcons = styled.div`
 
 const FooterWrapper = styled.footer`
   background-color: ${props => props.theme.color.footer};
-  padding: 35px 0;
+  padding: 40px 0;
+  background: #f6f6f6;
+  border-top: 10px solid #f0f0f0;
 `;
 
 const Copyright = styled.div`

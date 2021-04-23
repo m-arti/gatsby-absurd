@@ -10,8 +10,8 @@ import GlobalStyles from '@styles/GlobalStyles';
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
     <>
-      <SEO />
-      <GlobalStyles />
+      <SEO/>
+      <GlobalStyles/>
       {children}
     </>
   </ThemeProvider>

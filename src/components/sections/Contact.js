@@ -25,7 +25,6 @@ const Contact = () => (
     render={data => (
       <Section id="@" accent>
         <StyledContainer>
-
           <div>
             <h2 style={{fontWeight: 400}}>Contact</h2>
             <div>
@@ -53,7 +52,8 @@ const StyledContainer = styled(Container)`
   display: flex;
   justify-content: flex-end;
   position: relative;
-  margin-top: -70px;
+  margin-top: -50px;
+  margin-bottom: 100px;
 
   p {
     font-size: 20px;
@@ -64,7 +64,17 @@ const StyledContainer = styled(Container)`
   }
 
   @media (max-width: ${props => props.theme.screen.md}) {
+    margin-top: -50px;
+    margin-bottom: 300px;
     justify-content: center;
+  }
+
+  @media (max-width: ${props => props.theme.screen.sm}) {
+    margin-top: -70px;
+    margin-bottom: 150px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
   }
 `;
 
@@ -84,11 +94,9 @@ const StyledExternalLink = styled(ExternalLink)`
 const Art = styled.figure`
   width: 600px;
   position: absolute;
-  top: -20%;
   right: 50%;
 
   @media (max-width: ${props => props.theme.screen.lg}) {
-    top: 0;
     right: 50%;
     width: 500px;
   }
@@ -96,6 +104,20 @@ const Art = styled.figure`
   @media (max-width: ${props => props.theme.screen.md}) {
     width: 100%;
     margin-top: 200px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    right: -5%;
+    top: 30%;
+  }
+
+  @media (max-width: ${props => props.theme.screen.sm}) {
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    right: -7%;
+    top: 20%;
   }
 
 `;

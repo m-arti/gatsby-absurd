@@ -30,6 +30,7 @@ const Header = () => (
               <Img fluid={data.art_build.childImageSharp.fluid} fadeIn={true} durationFadeIn={3000}/>
             </Art>
             <Text>
+
               <h1 style={{fontWeight: 400}}>
                 AI Researcher
                 <br/>
@@ -38,11 +39,24 @@ const Header = () => (
                 <p style={{marginTop:'30px', marginBottom:'-10px', maxWidth:'400px', fontFamily:'Work Sans', fontSize:'20px', fontWeight:'300'}}>Currently studying misinformation detection using machine learning.</p>
                 <br/>
               </h1>
-              <p>
-                <StyledExternalLink href="https://blog.martinssamuel.com">
-                  Read my writings
-                </StyledExternalLink>
-              </p>
+
+              <div style={{display:'inline-flex'}}>
+                <div style={{ padding:'0px 30px 30px 0px'}}>
+                  <p>
+                    <StyledExternalLink href="https://blog.martinssamuel.com" style={{minWidth:'100px', textAlign:'center'}}>
+                      Writings
+                    </StyledExternalLink>
+                  </p>
+                </div>
+                <div style={{ padding:'0px 30px 30px 0px'}}>
+                  <p>
+                    <StyledExternalLink href="https://notes.martinssamuel.com" style={{minWidth:'100px', textAlign:'center'}}>
+                      Ideas
+                    </StyledExternalLink>
+                  </p>
+                </div>
+              </div>
+
             </Text>
           </Grid>
         </Container>
@@ -86,15 +100,23 @@ const Grid = styled.div`
 
     > ${Art} {
       order: 2;
+      padding-right: 60px;
     }
   }
 `;
 
 const Text = styled.div`
   justify-self: center;
+  padding-left: 100px;
 
   @media (max-width: ${props => props.theme.screen.md}) {
-    justify-self: start;
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  @media (max-width: ${props => props.theme.screen.sm}) {
+    padding-left: 0px;
+    text-align: center;
   }
 `;
 
@@ -108,9 +130,9 @@ const StyledExternalLink = styled(ExternalLink)`
   /* thanks to Hima Vincent for gradient hover effect (https://codemyui.com/pure-css-gradient-button-hover-effect) */
   flex-wrap: wrap;
   padding: 5px 15px 5px 15px;
-  border-radius: 3px;
-  background-image: linear-gradient(to right, #fdb085 0%, #d15010 /*#ff5500*/ 51%, #fda085 100%);
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1), 0 1px 20px 0 rgba(0, 0, 0, 0);
+  border-radius: 30px;
+  background-image: linear-gradient(to right, #000 -20%, #000  51%, #111 100%); /*#ff5500, #d15010, #fda085, #fdb085*/
+  box-shadow: 0 7px 10px 0 rgba(0, 0, 0, .1), 0 1px 20px 0 rgba(0, 0, 0, 0);
   background-size: 200% auto;
   transition: 0.5s;
 

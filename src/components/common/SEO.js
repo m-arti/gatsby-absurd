@@ -2,11 +2,11 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 const SEO_DATA = {
-  description: 'Personal website of Martins Samuel',
+  description: 'Martins Samuel',
   title: 'Martins Samuel',
   url: 'martinssamuel.com',
-  author: 'martins samuel',
-  keywords: ['martins', 'samuel'],
+  author: 'Martins Samuel',
+  keywords: ['Martins', 'Samuel', 'Martins Samuel', 'MartinsSamuel', 'Data Science', 'AI', 'NLP', 'Research'],
   img: '',
   twitterId: '@m_arti'
 };
