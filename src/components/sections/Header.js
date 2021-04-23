@@ -41,14 +41,14 @@ const Header = () => (
               </h1>
 
               <div style={{display:'inline-flex'}}>
-                <div style={{ padding:'0px 30px 30px 0px'}}>
+                <div style={{ padding:'0px 10px 30px 0px'}}>
                   <p>
                     <StyledExternalLink href="https://blog.martinssamuel.com" style={{minWidth:'100px', textAlign:'center'}}>
                       Writings
                     </StyledExternalLink>
                   </p>
                 </div>
-                <div style={{ padding:'0px 30px 30px 0px'}}>
+                <div style={{ padding:'0px 0px 30px 10px'}}>
                   <p>
                     <StyledExternalLink href="https://notes.martinssamuel.com" style={{minWidth:'100px', textAlign:'center'}}>
                       Ideas
@@ -71,6 +71,10 @@ const HeaderWrapper = styled.header`
 
   @media (max-width: ${props => props.theme.screen.md}) {
     padding-top: 128px;
+  }
+
+  @media (max-width: ${props => props.theme.screen.sm}) {
+    margin-bottom: -50px;
   }
 `;
 

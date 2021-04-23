@@ -13,9 +13,9 @@ const IndexPage = () => (
   <Layout>
     <Navbar/>
     <Header/>
-    <hr style={{marginTop:'120px', marginBottom:'-0px'}}/>
+    <hr style={{marginTop:'120px', marginBottom:'-60px'}}/>
     <About/>
-    <hr style={{marginTop:'0px', marginBottom:'50px'}}/>
+    <hr style={{marginTop:'0px', marginBottom:'40px'}}/>
     <Contact/>
     <Footer/>
   </Layout>

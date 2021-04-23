@@ -144,6 +144,10 @@ const Art = styled.figure`
   margin: 0;
   max-width: 380px;
   width: 100%;
+
+  @media (max-width: ${props => props.theme.screen.sm}) {
+    margin-bottom: -50px;
+  }
 `;
 
 const StyledExternalLink = styled(ExternalLink)`

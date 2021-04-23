@@ -116,7 +116,7 @@ const Art = styled.figure`
     align-items: center;
     justify-items: center;
     justify-content: center;
-    right: -7%;
+    right: -10%;
     top: 20%;
   }
 
