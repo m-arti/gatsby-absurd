@@ -13,6 +13,57 @@ module.exports = {
 
     `gatsby-plugin-styled-components`,
 
+    // gatsby-plugin-feed
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allSite } }) => {
+              return allSite.edges.map(edge => {
+                return Object.assign({}, edge.node.siteMetadata, {
+                  description: edge.node.description,
+                  url: site.siteMetadata.siteUrl,
+                  guid: site.siteMetadata.siteUrl,
+                })
+              })
+            },
+            query: `
+              {
+                allSite {
+                  edges {
+                    node {
+                      siteMetadata {
+                        siteUrl
+                        author
+                        description
+                        homepage
+                        title
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/rss.xml",
+            title: "Martins Samuel – RSS Feed",
+          },
+        ],
+      },
+    },
+
     // gatsby-plugin-react-helmet
     `gatsby-plugin-react-helmet`,
     {
@@ -44,7 +95,6 @@ module.exports = {
 
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    
 
     // gatsby-plugin-manifest
     {
