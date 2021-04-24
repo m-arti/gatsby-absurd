@@ -13,6 +13,14 @@ module.exports = {
 
     `gatsby-plugin-styled-components`,
 
+    // gatsby-plugin-sitemap
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {
+        exclude: ['/static'],
+      },
+    },
+
     // gatsby-plugin-feed
     {
       resolve: `gatsby-plugin-feed`,
