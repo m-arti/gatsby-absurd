@@ -17,7 +17,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
-        exclude: ['/static'],
+        exclude: ['/static', '/page-2'],
       },
     },
 
