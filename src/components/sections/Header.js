@@ -40,9 +40,9 @@ const TypedHeading = ({ children }) => {
             .delete(23)
             .pause(700)
 
-            .type("Explorer ─")
+            .type("Explorer___")
             .pause(2000)
-            .delete(10)
+            .delete(11)
             .pause(700)
 
             .type("Human Being")
