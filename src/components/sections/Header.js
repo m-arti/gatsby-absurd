@@ -5,6 +5,61 @@ import Img from 'gatsby-image';
 
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
+import TypeIt from "typeit-react";
+
+// This could be any component that generates HTML.
+const TypedHeading = ({ children }) => {
+  return (
+    <div style={{fontWeight: 400}}>
+      <TypeIt
+        options = {{
+          loop: true,
+          speed: 150,
+          cursorChar: '│',
+          cursorSpeed: 1000,
+          waitUntilVisible: true
+        }}
+        getBeforeInit = {
+          instance => {
+            // get instance
+            instance
+
+            // do animations
+            .type("AI Researcher<br/>& Designer")
+            .pause(1500)
+            .delete(8)
+            .pause(700)
+
+            .type("Teacher")
+            .pause(700)
+            .delete(7)
+            .pause(700)
+
+            .type("Student")
+            .pause(700)
+            .delete(23)
+            .pause(700)
+
+            .type("Explorer ─")
+            .pause(2000)
+            .delete(10)
+            .pause(700)
+
+            .type("Human Being")
+            .pause(1500)
+            .type(".")
+            .pause(5000)
+            .type('')
+            ;
+
+            // return instance
+            return instance;
+          }
+        }
+      />
+    </div>
+  );
+};
 
 const Header = () => (
   <StaticQuery
@@ -32,10 +87,9 @@ const Header = () => (
             <Text>
 
               <h1 style={{fontWeight: 400}}>
-                AI Researcher
-                <br/>
-                & Designer
-                <br/>
+
+                <TypedHeading></TypedHeading>
+
                 <p style={{marginTop:'30px', marginBottom:'-10px', maxWidth:'400px', fontFamily:'Work Sans', fontSize:'20px', fontWeight:'300'}}>Currently studying misinformation detection using machine learning.</p>
                 <br/>
               </h1>
